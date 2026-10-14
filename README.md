@@ -73,6 +73,7 @@
 ## 8. 환경
 - 학습: Google Colab (Tesla T4), PyTorch 2.11, segmentation-models-pytorch 0.5.0, albumentations
 - 로컬 개발·검증: MacBook (Apple M4, MPS)
+- 환경 파일: `environment.yml` (`conda env create -f environment.yml`)
 - 코드
   - `komap_unet_baseline.ipynb`: 로컬(Mac) 베이스라인
   - `komap_unet_colab.ipynb`: Colab 베이스라인 (실험 1)

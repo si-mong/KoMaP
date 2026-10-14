@@ -1,0 +1,23 @@
+# KoMaP 2026 알루미늄 합금 상 분할 — 개발 환경
+# 학습: Google Colab (Tesla T4, CUDA), Python 3.13, torch 2.11.0+cu130, smp 0.5.0
+# 로컬 개발·검증: MacBook (Apple M4, MPS), 아래 버전으로 Colab 결과(valid mIoU, test 마스크)가 동일하게 재현됨
+#
+# 설치: conda env create -f environment.yml && conda activate komap
+# GPU(CUDA) 환경은 https://pytorch.org 안내에 맞는 torch/torchvision 빌드로 교체
+name: komap
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - torch==2.14.1
+      - torchvision==0.29.1
+      - segmentation-models-pytorch==0.5.0
+      - timm==1.0.30
+      - albumentations==2.0.8
+      - opencv-python==5.0.0
+      - numpy==2.5.4
+      - pillow==12.3.0
+      - matplotlib==3.11.2
+      - jupyter

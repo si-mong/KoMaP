@@ -1,0 +1,17 @@
+# 대회 제출 서류 (양식·안내)
+docs/
+
+# 대회 데이터 (재배포 금지 가능성 있어서 제외)
+train/
+valid/
+test/
+*.zip
+
+# 학습 결과물
+checkpoints/
+*.pt
+
+# 기타
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
